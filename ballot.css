@@ -1,0 +1,89 @@
+
+#viewer {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-template-rows: 1fr 2.1fr 0.4fr 0.5fr 0.1fr;
+ grid-row-gap: 5px;
+ grid-column-gap: 5px;
+ grid-template-areas:
+  "a a"
+  "b c"
+  "d d"
+  "e f"
+  "g g";
+}
+
+.roundinfo {
+    grid-area: a;
+    background-color: #F7F7F7;
+    padding: 10px;
+}
+
+.pscores {
+    grid-area: b;
+    background-color: #F7F7F7;
+    padding: 10px;
+}
+
+.dscores {
+    grid-area: c;
+    background-color: #D1D1D1;
+    padding: 10px;
+}
+
+.rankinfo {
+    grid-area: d;
+    background-color: #F7F7F7;
+    padding: 10px;
+}
+
+.attranks {
+    grid-area: e;
+    background-color: #F7F7F7;
+    padding: 10px;
+}
+
+.witranks {
+    grid-area: f;
+    background-color: #D1D1D1;
+    padding: 10px;
+}
+
+.submitButton {
+  grid-area: g;
+
+  padding: 10px;
+  text-align: center;
+
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+h3 {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+p {
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+}
+
+form {
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+}
+
+button {
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+}
