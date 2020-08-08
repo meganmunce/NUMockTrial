@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Staatliches&display=swap');
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 0.35fr 0.2fr 1fr 0.1fr;
+  grid-template-areas:
+   "a b b"
+   "c c c"
+   "d d d"
+   "e f g"
+   "h h h";
+}
+
+.a {
+  background-color: #4E2A84;
+  grid-area: a;
+  padding: 10px;
+}
+
+.b {
+  background-color: #4E2A84;
+  grid-area: b;
+  padding: 10px;
+  text-align: right;
+  justify-content: center;
+}
+
+.c {
+  background-color: #4E2A84;
+  grid-area: c;
+  padding: 10px;
+}
+
+.d {
+  background-color: #9A73D3;
+  grid-area: d;
+  padding: 10px;
+  padding-top: 20px;
+  justify-content: center;
+}
+
+.e {
+  background-color: #9A73D3;
+  grid-area: e;
+  padding: 10px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.f {
+  background-color: #9A73D3;
+  grid-area: f;
+  padding: 10px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.g {
+  background-color: #9A73D3;
+  grid-area: g;
+  padding: 10px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.h {
+  background-color: #4E2A84;
+  grid-area: h;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.icon {
+  color: white;
+  text-align: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.buttonlink {
+  font-family: 'Staatliches', cursive;
+  font-size: 25px;
+  color: white;
+  border-radius: 20px;
+  border: 2px solid white;
+  background-color: #BBA2E2;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 7px 7px white;
+  text-decoration: none;
+}
+
+.buttonlink:active{
+  box-shadow: 4px 4px white;
+  transform: translateY(3px);
+}
+
+h1 {
+  font-family: 'Staatliches', cursive;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  margin: 1px;
+}
+
+h2 {
+  font-family: 'Staatliches', cursive;
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  margin: 1px;
+}
+
+h3 {
+  font-family: 'Staatliches', cursive;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  margin: 1px;
+}
+
+h4 {
+  font-family: 'Staatliches', cursive;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  color: white;
+  margin: 5px;
+}
+
+.icon:hover {
+  animation: scaleupdark 400ms;
+  transform: scale(1.2);
+  text-shadow: 2px 2px 5px #4E2A84;
+}
+
+.b .icon{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.b .icon:hover{
+  animation: scaleuplight 400ms;
+  text-shadow: 2px 2px 5px #836EAA;
+  transform: scale(1.2);
+}
+
+.logoclass {
+  height: 50px;
+  width: auto;
+}
+
+.h a {
+  font-family: 'Staatliches', cursive;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+
+@keyframes scaleupdark {
+  0%{transform: scale(1);
+    text-shadow: none;}
+  100%{transform: scale(1.2);
+      text-shadow: 2px 2px 5px #4E2A84;}
+}
+
+@keyframes scaleuplight {
+  0%{transform: scale(1);
+    text-shadow: none;}
+  100%{transform: scale(1.2);
+      text-shadow: 2px 2px 5px #836EAA;}
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Staatliches&display=swap');
+
+.main {
+  background-color: #4E2A84;
+  padding: 30px;
+  margin: 0px;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+
+/* not divs */
+
+.enter {
+  font-family: 'Staatliches', cursive;
+  font-size: 40px;
+  color: white;
+  border-radius: 20px;
+  border: 2px solid white;
+  background-color: #BBA2E2;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 7px 7px white;
+}
+
+.buttonanimation{
+  animation: fadeinslow ease 4s;
+}
+
+.over:hover {
+  animation: darken 400ms;
+  background-color: #8E64CE;
+}
+
+.enter:active{
+  box-shadow: 4px 4px white;
+  transform: translateY(3px);
+}
+
+.logoimg {
+  height: 250px;
+  width: auto;
+}
+
+.faded {
+  animation: fadein ease 3s;
+}
+
+p {
+  color: #4E2A84;
+}
+
+h1 {
+  font-family: 'Staatliches', cursive;
+  font-size: 70px;
+  color: white;
+  text-align: center;
+  animation: fadein ease 3s;
+}
+
+h2 {
+  font-family: 'Staatliches', cursive;
+  font-size: 70px;
+  color: white;
+  text-align: center;
+}
+
+@keyframes fadein {
+  0%{opacity:0%;}
+  100%{opacity: 100%;}
+}
+
+@keyframes fadeinslow {
+  0%{opacity:0%;}
+  70%{opacity:0%;}
+  100%{opacity: 100%;}
+}
+
+@keyframes darken{
+  0%{background-color: #BBA2E2;}
+  100%{background-color: #8E64CE;}
+}
