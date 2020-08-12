@@ -11,7 +11,21 @@
    "a b b"
    "c c c"
    "d d d"
-   "e f g"
+   "u i g"
+   "h h h";
+}
+
+#learnmore{
+  display: grid;
+  background-color: #BBA2E2;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 0.35fr 0.2 1fr 1fr 0.3fr;
+  grid-template-areas:
+   "a b b"
+   "c c c "
+   "d d d"
+   "m e f"
+   "j k l"
    "h h h";
 }
 
@@ -43,27 +57,25 @@
 }
 
 .e {
-  background-color: white;
-  box-shadow: 5px 5px #9A73D3;
-  border: 4px solid black;
   grid-area: e;
-  padding: 10px;
-  text-align: center;
   margin: 15px;
   margin-bottom: 25px;
+  padding: 20px;
+  text-align: center;
   padding-bottom: 20px;
+  transform-style:preserve-3d;
+  transition: all 0.5s ease;
 }
 
 .f {
-  background-color: white;
-  box-shadow: 5px 5px #9A73D3;
-  border: 4px solid black;
   grid-area: f;
   margin: 15px;
-  padding: 10px;
   margin-bottom: 25px;
+  padding: 20px;
   text-align: center;
   padding-bottom: 20px;
+  transform-style:preserve-3d;
+  transition: all 0.5s ease;
 }
 
 .g {
@@ -73,9 +85,36 @@
   grid-area: g;
   margin: 15px;
   margin-bottom: 25px;
+  padding: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+  min-height: 500px;
+}
+
+.u {
+  background-color: white;
+  box-shadow: 5px 5px #9A73D3;
+  border: 4px solid black;
+  grid-area: u;
+  margin: 15px;
+  margin-bottom: 25px;
   padding: 10px;
   text-align: center;
   padding-bottom: 20px;
+  min-height: 500px;
+}
+
+.i {
+  background-color: white;
+  box-shadow: 5px 5px #9A73D3;
+  border: 4px solid black;
+  grid-area: i;
+  margin: 15px;
+  margin-bottom: 25px;
+  padding: 10px;
+  text-align: center;
+  padding-bottom: 20px;
+  min-height: 500px;
 }
 
 .h {
@@ -87,11 +126,60 @@
   text-align: center;
 }
 
-.icon {
-  color: white;
+.j {
+  grid-area: j;
+  margin: 15px;
+  margin-bottom: 25px;
+  padding: 10px;
   text-align: center;
+  padding-bottom: 20px;
+  transform-style:preserve-3d;
+  transition: all 0.5s ease;
+  min-height: 250px;
+}
+
+.box {
   justify-content: center;
-  padding-top: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.k {
+  grid-area: k;
+  margin: 15px;
+  margin-bottom: 25px;
+  padding: 10px;
+  text-align: center;
+  padding-bottom: 20px;
+  transform-style:preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.l {
+  grid-area: l;
+  margin: 15px;
+  margin-bottom: 25px;
+  padding: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+  transform-style:preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.m {
+  grid-area: m;
+  margin: 15px;
+  margin-bottom: 25px;
+  padding: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+  transform-style:preserve-3d;
+  transition: all 0.5s ease;
+  min-height: 250px;
+}
+
+.arrow {
+  color: #4E2A84;
 }
 
 .buttonlink {
@@ -138,7 +226,7 @@ h2 {
 h3 {
   font-family: 'Staatliches', cursive;
   font-size: 25px;
-  color: white;
+  color: #4E2A84;
   text-align: center;
   margin: 1px;
   animation: fadein ease 3s;
@@ -166,12 +254,6 @@ p {
   background: linear-gradient(180deg,rgba(255,255,255,0) 35%, #4E2A84 0%);
 }
 
-.icon:hover {
-  animation: scaleupdark 400ms;
-  transform: scale(1.2);
-  text-shadow: 2px 2px 5px #4E2A84;
-}
-
 .b .icon{
   margin-left: 5px;
   margin-right: 5px;
@@ -188,6 +270,9 @@ p {
   width: auto;
 }
 
+a {
+  text-decoration: none;
+}
 
 .h a {
   font-family: 'Staatliches', cursive;
@@ -207,16 +292,11 @@ p {
   animation-play-state: running;
 }
 
-.arrow {
-    opacity: 0;
-  }
+/* ANIMATIONS */
 
 .grow:hover {
   animation: scaleup ease 500ms;
   transform: scale(1.05);
-  .arrow {
-    opacity: 1;
-  }
 }
 
 .fadedown {

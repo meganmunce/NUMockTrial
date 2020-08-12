@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Staatliches&display=swap');
+
+#learnmore{
+  display: grid;
+  background-color: #BBA2E2;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 0.35fr 0.2 1fr 1fr 0.3fr;
+  grid-template-areas:
+   "a b b"
+   "c c c "
+   "d d d"
+   "m e f"
+   "j k l"
+   "h h h";
+}
+.e {
+  grid-area: e;
+  margin: 15px;
+  margin-bottom: 25px;
+  padding: 10px;
+  text-align: center;
+  padding-bottom: 20px;
+  transform-style:preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.f {
+  grid-area: f;
+  margin: 15px;
+  margin-bottom: 25px;
+  padding: 10px;
+  text-align: center;
+  padding-bottom: 20px;
+  transform-style:preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.g {
+  background-color: white;
+  box-shadow: 5px 5px #9A73D3;
+  border: 4px solid black;
+  grid-area: g;
+  margin: 15px;
+  margin-bottom: 25px;
+  padding: 10px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.h {
+  background-color: #4E2A84;
+  grid-area: h;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.j {
+  grid-area: j;
+  margin: 15px;
+  margin-bottom: 25px;
+  padding: 10px;
+  text-align: center;
+  padding-bottom: 20px;
+  transform-style:preserve-3d;
+  transition: all 0.5s ease;
+  min-height: 200px;
+}
+
+.box {
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.k {
+  grid-area: k;
+  margin: 15px;
+  margin-bottom: 25px;
+  padding: 10px;
+  text-align: center;
+  padding-bottom: 20px;
+  transform-style:preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.l {
+  grid-area: l;
+  margin: 15px;
+  margin-bottom: 25px;
+  padding: 10px;
+  text-align: center;
+  padding-bottom: 20px;
+  transform-style:preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.m {
+  grid-area: m;
+  margin: 15px;
+  margin-bottom: 25px;
+  padding: 10px;
+  text-align: center;
+  padding-bottom: 20px;
+  transform-style:preserve-3d;
+  transition: all 0.5s ease;
+  min-height: 200px;
+}
+
+/* CARD FLIPPING */
+
+.mcard {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  position: absolute;
+  box-shadow: 5px 5px #9A73D3;
+  border: 4px solid black;
+}
+
+.mcard:hover {
+  transform: rotateY(180deg);
+}
+
+.mfront{
+  backface-visibility: hidden;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.mback {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  color: #4E2A84;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.ecard {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  position: absolute;
+  box-shadow: 5px 5px #9A73D3;
+  border: 4px solid black;
+}
+
+.ecard:hover {
+  transform: rotateY(180deg);
+}
+
+.efront{
+  backface-visibility: hidden;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.eback {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  color: #4E2A84;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.jcard {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  position: absolute;
+  box-shadow: 5px 5px #9A73D3;
+  border: 4px solid black;
+}
+
+.jcard:hover {
+  transform: rotateY(180deg);
+}
+
+.jfront{
+  backface-visibility: hidden;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.jback {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  color: #4E2A84;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.jcard {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  position: absolute;
+  box-shadow: 5px 5px #9A73D3;
+  border: 4px solid black;
+}
+
+.lcard {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  position: absolute;
+  box-shadow: 5px 5px #9A73D3;
+  border: 4px solid black;
+}
+
+.lcard:hover {
+  transform: rotateY(180deg);
+}
+
+.lfront{
+  backface-visibility: hidden;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.lback {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  color: #4E2A84;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.lcard {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  position: absolute;
+  box-shadow: 5px 5px #9A73D3;
+  border: 4px solid black;
+}
+
+.fcard {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  position: absolute;
+  box-shadow: 5px 5px #9A73D3;
+  border: 4px solid black;
+}
+
+.kcard {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  position: absolute;
+  box-shadow: 5px 5px #9A73D3;
+  border: 4px solid black;
+}
+
+.kcard:hover {
+  transform: rotateY(180deg);
+}
+
+.kfront{
+  backface-visibility: hidden;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.kback {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  color: #4E2A84;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.kcard {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  position: absolute;
+  box-shadow: 5px 5px #9A73D3;
+  border: 4px solid black;
+}
+
+.fcard:hover {
+  transform: rotateY(180deg);
+}
+
+.ffront{
+  backface-visibility: hidden;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.fback {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  color: #4E2A84;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}

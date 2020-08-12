@@ -1,6 +1,8 @@
 const removeanimation = () => {
   $(".box").removeClass("fadedown");
-  $(".box").addClass("grow");
+  $(".u").addClass("grow");
+  $(".i").addClass("grow");
+  $(".g").addClass("grow");
   console.log('removed');
 };
 
