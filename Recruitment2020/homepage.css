@@ -254,12 +254,13 @@ p {
   background: linear-gradient(180deg,rgba(255,255,255,0) 35%, #4E2A84 0%);
 }
 
-.b .icon{
+.icon{
   margin-left: 5px;
   margin-right: 5px;
+  color: #FFFFFF;
 }
 
-.b .icon:hover{
+.icon:hover{
   animation: scaleuplight 400ms;
   text-shadow: 2px 2px 5px #836EAA;
   transform: scale(1.1);
