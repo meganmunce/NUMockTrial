@@ -79,7 +79,7 @@
 }
 
 .g {
-  background-color: white;
+  background-color: #FFFFFF;
   box-shadow: 5px 5px #9A73D3;
   border: 4px solid black;
   grid-area: g;
@@ -92,7 +92,7 @@
 }
 
 .u {
-  background-color: white;
+  background-color: #FFFFFF;
   box-shadow: 5px 5px #9A73D3;
   border: 4px solid black;
   grid-area: u;
@@ -105,7 +105,7 @@
 }
 
 .i {
-  background-color: white;
+  background-color: #FFFFFF;
   box-shadow: 5px 5px #9A73D3;
   border: 4px solid black;
   grid-area: i;
@@ -185,13 +185,13 @@
 .buttonlink {
   font-family: 'Staatliches', cursive;
   font-size: 25px;
-  color: white;
+  color: #FFFFFF;
   border-radius: 20px;
-  border: 2px solid white;
+  border: 2px solid #FFFFFF;
   background-color: #BBA2E2;
   text-align: center;
   padding: 15px;
-  box-shadow: 7px 7px white;
+  box-shadow: 7px 7px #FFFFFF;
   text-decoration: none;
 }
 
@@ -201,14 +201,14 @@
 }
 
 .buttonlink:active{
-  box-shadow: 4px 4px white;
+  box-shadow: 4px 4px #FFFFFF;
   transform: translateY(3px);
 }
 
 h1 {
   font-family: 'Staatliches', cursive;
   font-size: 50px;
-  color: white;
+  color: #FFFFFF;
   text-align: center;
   margin: 1px;
   animation: fadein ease 3s;
@@ -217,7 +217,7 @@ h1 {
 h2 {
   font-family: 'Staatliches', cursive;
   font-size: 35px;
-  color: white;
+  color: #FFFFFF;
   text-align: center;
   margin: 1px;
   animation: fadein ease 3s;
@@ -277,7 +277,7 @@ a {
 .h a {
   font-family: 'Staatliches', cursive;
   font-size: 25px;
-  color: white;
+  color: #FFFFFF;
   text-align: center;
   animation: fadein ease 3s;
 }
