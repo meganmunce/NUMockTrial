@@ -203,7 +203,8 @@ p {
 
 .fadeleft {
   animation: fadeOutLeft;
-  animation-duration: 2s;  
+  animation-duration: 2s;
+  animation-play-state: running;
 }
 
 .arrow {
@@ -219,8 +220,8 @@ p {
 }
 
 .fadedown {
-  animation: fadeInDown;
-  animation-duration: 2s;
+  animation: fadeIn;
+  animation-duration: 3s;
 }
 
 @keyframes scaleupdark {
