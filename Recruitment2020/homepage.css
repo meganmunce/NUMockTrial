@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Staatliches&display=swap');
 
 #container {
+/*  background-repeat:repeat; */
+/*  background-position: auto; */
+  background-color: #BBA2E2;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.1fr 0.35fr 0.2fr 1fr 0.1fr;
@@ -27,38 +30,49 @@
 }
 
 .c {
-  background-color: #4E2A84;
+/*  background-color: #4E2A84; */
   grid-area: c;
   padding: 10px;
+  padding-top: 25px;
 }
 
 .d {
-  background-color: #9A73D3;
   grid-area: d;
-  padding: 10px;
   padding-top: 20px;
   justify-content: center;
 }
 
 .e {
-  background-color: #9A73D3;
+  background-color: white;
+  box-shadow: 5px 5px #9A73D3;
+  border: 4px solid black;
   grid-area: e;
   padding: 10px;
   text-align: center;
+  margin: 15px;
+  margin-bottom: 25px;
   padding-bottom: 20px;
 }
 
 .f {
-  background-color: #9A73D3;
+  background-color: white;
+  box-shadow: 5px 5px #9A73D3;
+  border: 4px solid black;
   grid-area: f;
+  margin: 15px;
   padding: 10px;
+  margin-bottom: 25px;
   text-align: center;
   padding-bottom: 20px;
 }
 
 .g {
-  background-color: #9A73D3;
+  background-color: white;
+  box-shadow: 5px 5px #9A73D3;
+  border: 4px solid black;
   grid-area: g;
+  margin: 15px;
+  margin-bottom: 25px;
   padding: 10px;
   text-align: center;
   padding-bottom: 20px;
@@ -93,6 +107,11 @@
   text-decoration: none;
 }
 
+.buttonlink:hover {
+  animation: darken 400ms;
+  background-color: #8E64CE;
+}
+
 .buttonlink:active{
   box-shadow: 4px 4px white;
   transform: translateY(3px);
@@ -104,6 +123,7 @@ h1 {
   color: white;
   text-align: center;
   margin: 1px;
+  animation: fadein ease 3s;
 }
 
 h2 {
@@ -112,6 +132,7 @@ h2 {
   color: white;
   text-align: center;
   margin: 1px;
+  animation: fadein ease 3s;
 }
 
 h3 {
@@ -120,22 +141,29 @@ h3 {
   color: white;
   text-align: center;
   margin: 1px;
+  animation: fadein ease 3s;
 }
 
 h4 {
   font-family: 'Staatliches', cursive;
   font-size: 25px;
-  color: white;
+  color: #4E2A84;
   text-align: center;
   margin-top: 40px;
   margin-bottom: 15px;
+  animation: fadein ease 3s;
 }
 
 p {
   font-family: 'Lato', sans-serif;
-  font-size: 18px;
-  color: white;
+  font-size: 15px;
+  color: #4E2A84;
   margin: 5px;
+  animation: fadein ease 3s;
+}
+
+.highlight {
+  background: linear-gradient(180deg,rgba(255,255,255,0) 35%, #4E2A84 0%);
 }
 
 .icon:hover {
@@ -152,7 +180,7 @@ p {
 .b .icon:hover{
   animation: scaleuplight 400ms;
   text-shadow: 2px 2px 5px #836EAA;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .logoclass {
@@ -160,13 +188,40 @@ p {
   width: auto;
 }
 
+
 .h a {
   font-family: 'Staatliches', cursive;
   font-size: 25px;
   color: white;
   text-align: center;
+  animation: fadein ease 3s;
 }
 
+.faded {
+  animation: fadein ease 3s;
+}
+
+.fadeleft {
+  animation: fadeOutLeft;
+  animation-duration: 2s;  
+}
+
+.arrow {
+    opacity: 0;
+  }
+
+.grow:hover {
+  animation: scaleup ease 500ms;
+  transform: scale(1.05);
+  .arrow {
+    opacity: 1;
+  }
+}
+
+.fadedown {
+  animation: fadeInDown;
+  animation-duration: 2s;
+}
 
 @keyframes scaleupdark {
   0%{transform: scale(1);
@@ -175,9 +230,19 @@ p {
       text-shadow: 2px 2px 5px #4E2A84;}
 }
 
+@keyframes scaleup {
+  0%{transform: scale(1);}
+  100%{transform: scale(1.05);}
+}
+
 @keyframes scaleuplight {
   0%{transform: scale(1);
     text-shadow: none;}
-  100%{transform: scale(1.2);
+  100%{transform: scale(1.1);
       text-shadow: 2px 2px 5px #836EAA;}
+}
+
+@keyframes darken{
+  0%{background-color: #BBA2E2;}
+  100%{background-color: #8E64CE;}
 }
