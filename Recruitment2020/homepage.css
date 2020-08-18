@@ -57,6 +57,7 @@
   background-image: url("photospurple60.png");
   background-repeat: repeat;
   padding-bottom: 50px;
+  border-bottom: 10px solid #4E2A84;
 }
 
 .d {
