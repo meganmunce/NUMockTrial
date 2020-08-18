@@ -1,27 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Staatliches&display=swap');
 
+#headergrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 0.1fr;
+  grid-template-areas:
+   "a b";
+}
+
 #container {
 /*  background-repeat:repeat; */
 /*  background-position: auto; */
-  background-color: #BBA2E2;
+  background-color: white;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.1fr 0.35fr 0.2fr 1fr 0.1fr;
+  grid-template-rows: 0.35fr 1fr 0.1fr;
   grid-template-areas:
-   "a b b"
    "c c c"
-   "d d d"
    "u i g"
    "h h h";
+   background-image: url("purplefleck.png");
+   background-repeat: repeat;
 }
 
 #learnmore{
   display: grid;
   background-color: #BBA2E2;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.1fr 0.35fr 0.2 1fr 1fr 0.3fr;
+  grid-template-rows: 0.35fr 0.2 1fr 1fr 0.3fr;
   grid-template-areas:
-   "a b b"
    "c c c "
    "d d d"
    "m e f"
@@ -44,16 +51,19 @@
 }
 
 .c {
-/*  background-color: #4E2A84; */
   grid-area: c;
   padding: 10px;
   padding-top: 25px;
+  background-image: url("photospurple60.png");
+  background-repeat: repeat;
+  padding-bottom: 50px;
 }
 
 .d {
   grid-area: d;
   padding-top: 20px;
   justify-content: center;
+  background-color: #4E2A84;
 }
 
 .e {
@@ -80,7 +90,7 @@
 
 .g {
   background-color: #FFFFFF;
-  box-shadow: 5px 5px #9A73D3;
+  box-shadow: 5px 5px #BBA2E2;
   border: 4px solid black;
   grid-area: g;
   margin: 15px;
@@ -88,12 +98,13 @@
   padding: 20px;
   text-align: center;
   padding-bottom: 20px;
-  min-height: 500px;
+  min-height: 300px;
+  padding-top: 30px;
 }
 
 .u {
   background-color: #FFFFFF;
-  box-shadow: 5px 5px #9A73D3;
+  box-shadow: 5px 5px #BBA2E2;
   border: 4px solid black;
   grid-area: u;
   margin: 15px;
@@ -101,12 +112,13 @@
   padding: 10px;
   text-align: center;
   padding-bottom: 20px;
-  min-height: 500px;
+  min-height: 300px;
+  padding-top: 30px;
 }
 
 .i {
   background-color: #FFFFFF;
-  box-shadow: 5px 5px #9A73D3;
+  box-shadow: 5px 5px #BBA2E2;
   border: 4px solid black;
   grid-area: i;
   margin: 15px;
@@ -114,7 +126,8 @@
   padding: 10px;
   text-align: center;
   padding-bottom: 20px;
-  min-height: 500px;
+  min-height: 300px;
+  padding-top: 30px;
 }
 
 .h {
@@ -178,6 +191,99 @@
   min-height: 250px;
 }
 
+.whitemodal {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1; /* Sit on top */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-image: url("white75.png");
+  background-repeat: repeat;
+  animation: fadein ease 0.5s;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.modal1 {
+  display: none;
+  position: absolute;
+  left: 10%;
+  top: 0;
+  z-index: 1; /* Sit on top */
+  width: 20%; /* Full width */
+  height: 15%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #4E2A84;
+  background-repeat: repeat;
+  animation: fadein ease 0.5s;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.modal2 {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  z-index: 1; /* Sit on top */
+  width: 20%; /* Full width */
+  height: 15%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #4E2A84;
+  background-repeat: repeat;
+  animation: fadein ease 0.5s;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Sit on top */
+  width: 50%; /* Full width */
+  height: 25%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #4E2A84;
+  animation: fadein ease 0.5s;
+  padding: 20px;
+  border-radius: 30px;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 5px 5px white;
+  border: 2px solid white;
+}
+
+.tutorialbutton {
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid white;
+  background-color: #BBA2E2;
+  text-align: center;
+  padding: 5px;
+  box-shadow: 5px 5px white;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.tutorialbutton:active {
+  box-shadow: 2px 2px white;
+  transform: translateY(3px);
+}
+
+.modal p {
+  color: white;
+  text-align: center;
+}
+
 .arrow {
   color: #4E2A84;
 }
@@ -212,7 +318,7 @@ h1 {
   text-align: center;
   margin: 1px;
   animation: fadein ease 3s;
-}
+  }
 
 h2 {
   font-family: 'Staatliches', cursive;
@@ -226,7 +332,7 @@ h2 {
 h3 {
   font-family: 'Staatliches', cursive;
   font-size: 25px;
-  color: #4E2A84;
+  color: #FFFFFF;
   text-align: center;
   margin: 1px;
   animation: fadein ease 3s;
@@ -242,6 +348,13 @@ h4 {
   animation: fadein ease 3s;
 }
 
+h5 {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  color: white;
+  margin: 5px;
+}
+
 p {
   font-family: 'Lato', sans-serif;
   font-size: 15px;
@@ -250,8 +363,18 @@ p {
   animation: fadein ease 3s;
 }
 
-.highlight {
+.darkhighlight {
   background: linear-gradient(180deg,rgba(255,255,255,0) 35%, #4E2A84 0%);
+  padding-left: 15px;
+  padding-right: 15px;
+/*  text-shadow: -3px 0 #4E2A84, 0 3px #4E2A84, 3px 0 #4E2A84, 0 -3px #4E2A84; */
+}
+
+.lighthighlight {
+  background: linear-gradient(180deg,rgba(255,255,255,0) 35%, #BBA2E2 0%);
+  padding-left: 15px;
+  padding-right: 15px;
+/*  text-shadow: -3px 0 #4E2A84, 0 3px #4E2A84, 3px 0 #4E2A84, 0 -3px #4E2A84; */
 }
 
 .icon{
