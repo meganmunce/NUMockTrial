@@ -33,14 +33,14 @@ const skipTutorial = () => {
 const closeModal = () => {
   modal.style.display="none";
   whitemodal.style.display="none";
-  logo.style.border="5px solid red";
+  logo.style.border="5px solid #BBA2E2";
   modal1.style.display="block";
 };
 
 const step2 = () => {
   logo.style.border="none";
   modal1.style.display="none";
-  document.querySelector('.b').style.border="5px solid red";
+  document.querySelector('.b').style.border="5px solid #BBA2E2";
   modal2.style.display="block";
 };
 

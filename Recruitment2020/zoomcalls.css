@@ -10,7 +10,7 @@
    "x x x x"
    "w r t s"
    "h h h h";
-   background-image: url("purplefleck.png");
+   background-image: url("images/purplefleck.png");
    background-repeat: repeat;
 }
 
@@ -106,4 +106,37 @@
 @keyframes scaleup {
   0%{transform: scale(1);}
   100%{transform: scale(1.05);}
+}
+
+@media (max-width: 900px) {
+  #zoomcalls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.35fr 0.2 1fr 1fr 0.3fr;
+    grid-template-areas:
+     "a b"
+     "c c"
+     "x x"
+     "w r"
+     "t s"
+     "h h";
+  }
+  }
+
+@media (max-width: 667px) {
+
+  #zoomcalls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.35fr 0.2 0.8fr 0.8fr 0.8fr 0.8fr 0.3fr;
+    grid-template-areas:
+     "a b"
+     "c c"
+     "x x"
+     "w w"
+     "r r"
+     "t t"
+     "s s"
+     "h h";
+  }
 }
