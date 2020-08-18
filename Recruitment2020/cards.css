@@ -14,6 +14,12 @@
    "h h h";
 }
 
+.d p {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 #learnmore h3 {
   color: #4E2A84
 }
@@ -129,6 +135,7 @@
 
 .mfront{
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   background-color: white;
   height: 100%;
   width: 100%;
@@ -137,6 +144,7 @@
 
 .mback {
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   transform: rotateY(180deg);
   color: #4E2A84;
   background-color: white;
@@ -159,6 +167,7 @@
 
 .efront{
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   background-color: white;
   height: 100%;
   width: 100%;
@@ -167,6 +176,7 @@
 
 .eback {
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   transform: rotateY(180deg);
   color: #4E2A84;
   background-color: white;
@@ -189,6 +199,7 @@
 
 .jfront{
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   background-color: white;
   height: 100%;
   width: 100%;
@@ -197,6 +208,7 @@
 
 .jback {
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   transform: rotateY(180deg);
   color: #4E2A84;
   background-color: white;
@@ -231,6 +243,7 @@
 
 .lfront{
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   background-color: white;
   height: 100%;
   width: 100%;
@@ -239,6 +252,7 @@
 
 .lback {
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   transform: rotateY(180deg);
   color: #4E2A84;
   background-color: white;
@@ -285,6 +299,7 @@
 
 .kfront{
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   background-color: white;
   height: 100%;
   width: 100%;
@@ -293,6 +308,7 @@
 
 .kback {
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   transform: rotateY(180deg);
   color: #4E2A84;
   background-color: white;
@@ -315,6 +331,7 @@
 
 .ffront{
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   background-color: white;
   height: 100%;
   width: 100%;
@@ -323,6 +340,7 @@
 
 .fback {
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   transform: rotateY(180deg);
   color: #4E2A84;
   background-color: white;
