@@ -2,14 +2,14 @@
 
 #zoomcalls {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.1fr 0.35fr 0.2 1.5fr 0.3fr;
   grid-template-areas:
-   "a a b b"
-   "c c c c"
-   "x x x x"
-   "w r t s"
-   "h h h h";
+   "a b"
+   "c c"
+   "x x"
+   "w r"
+   "h h";
    background-image: url("images/purplefleck.png");
    background-repeat: repeat;
 }
