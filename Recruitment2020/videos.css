@@ -2,15 +2,17 @@
 
 #container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.1fr 0.35fr 0.2 1.5fr 1fr 0.3fr;
   grid-template-areas:
-   "a a b "
-   "c c c "
-   "x x x "
-   "d d d "
-   "e f g"
-   "h h h";
+   "a b"
+   "c c"
+   "x x"
+   "d d"
+   "e f"
+   "h h";
+   background-image: url("images/purplefleck.png");
+   background-repeat: repeat;
 }
 
 .a {
@@ -33,10 +35,11 @@
   padding: 10px;
   text-align: center;
   justify-content: center;
+  background-image: url("images/photospurple60.png");
 }
 
 .x {
-  background-color: #9A73D3;
+  background-color: #4E2A84;
   grid-area: x;
   padding: 10px;
   text-align: center;
@@ -44,7 +47,6 @@
 }
 
 .d {
-  background-color: #9A73D3;
   grid-area: d;
   padding: 10px;
   text-align: center;
@@ -53,7 +55,6 @@
 }
 
 .e {
-  background-color: #9A73D3;
   grid-area: e;
   padding: 10px;
   text-align: center;
@@ -62,7 +63,6 @@
 }
 
 .f {
-  background-color: #9A73D3;
   grid-area: f;
   padding: 10px;
   text-align: center;
@@ -181,6 +181,12 @@ p {
   text-align: center;
 }
 
+.darkhighlight {
+  background: linear-gradient(180deg,rgba(255,255,255,0) 35%, #4E2A84 0%);
+  padding-left: 15px;
+  padding-right: 15px;
+/*  text-shadow: -3px 0 #4E2A84, 0 3px #4E2A84, 3px 0 #4E2A84, 0 -3px #4E2A84; */
+}
 
 @keyframes scaleupdark {
   0%{transform: scale(1);

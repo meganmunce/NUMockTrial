@@ -248,7 +248,7 @@
   transform: translate(-50%, -50%);
   z-index: 1; /* Sit on top */
   width: 50%; /* Full width */
-  height: 25%; /* Full height */
+  height: 32%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: #4E2A84;
   animation: fadein ease 0.5s;
